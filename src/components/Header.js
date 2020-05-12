@@ -76,7 +76,7 @@ class Header extends React.Component {
       <nav className="navbar navbar-light">
         <div className="container">
 
-          <Link to="/h2h" className="navbar-brand">
+          <Link to="/h2h/" className="navbar-brand">
             <h4 className="brandColor">{this.props.appName}</h4>
           </Link>
 

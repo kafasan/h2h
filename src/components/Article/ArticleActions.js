@@ -19,7 +19,7 @@ const ArticleActions = props => {
       <span>
 
         <Link
-          to={`/editor/${article.slug}`}
+          to={`/h2h/editor/${article.slug}`}
           className="btn btn-light btn-sm">
           <i className="ion-edit"></i> Edit Post
         </Link>

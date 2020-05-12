@@ -35,26 +35,26 @@ export default (state = defaultState, action) => {
     case REDIRECT:
       return { ...state, redirectTo: null };
     case LOGOUT:
-      return { ...state, redirectTo: '/', token: null, currentUser: null };
+      return { ...state, redirectTo: '/h2h/', token: null, currentUser: null };
     case ARTICLE_SUBMITTED:
-      const redirectUrl = `/article/${action.payload.article.slug}`;
+      const redirectUrl = `/h2h/article/${action.payload.article.slug}`;
       return { ...state, redirectTo: redirectUrl };
     case SETTINGS_SAVED:
       return {
         ...state,
-        redirectTo: action.error ? null : '/',
+        redirectTo: action.error ? null : '/h2h/',
         currentUser: action.error ? null : action.payload.user
       };
     case LOGIN:
     case REGISTER:
       return {
         ...state,
-        redirectTo: action.error ? null : '/',
+        redirectTo: action.error ? null : '/h2h/',
         token: action.error ? null : action.payload.user.token,
         currentUser: action.error ? null : action.payload.user
       };
     case DELETE_ARTICLE:
-      return { ...state, redirectTo: '/' };
+      return { ...state, redirectTo: '/h2h/' };
     case ARTICLE_PAGE_UNLOADED:
     case EDITOR_PAGE_UNLOADED:
     case HOME_PAGE_UNLOADED:
