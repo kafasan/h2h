@@ -48,7 +48,7 @@ class Login extends React.Component {
             <div className="col-md-6 offset-md-3 col-xs-12">
               <h3 className="text-xs-center">Sign In</h3>
               <p className="text-xs-center">
-                <Link to="/register">
+                <Link to="/h2h/register">
                   Need an account?
                 </Link>
               </p>

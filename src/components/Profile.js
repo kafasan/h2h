@@ -12,7 +12,7 @@ const EditProfileSettings = props => {
   if (props.isUser) {
     return (
       <Link
-        to="/settings"
+        to="/h2h/settings"
         className="btn btn-sm btn-outline-secondary action-btn">
         <i className="ion-gear-a"></i> Edit Profile
       </Link>
@@ -50,7 +50,7 @@ class Profile extends React.Component {
         <li className="nav-item">
           <Link
             className="nav-link active"
-            to={`/@${this.props.profile.username}`}>
+            to={`/h2h/@${this.props.profile.username}`}>
             My Post
           </Link>
         </li>
@@ -58,7 +58,7 @@ class Profile extends React.Component {
         <li className="nav-item">
           <Link
             className="nav-link"
-            to={`/@${this.props.profile.username}/favorites`}>
+            to={`/h2h/@${this.props.profile.username}/favorites`}>
             Favorited Posts
           </Link>
         </li>

@@ -33,7 +33,7 @@ class ProfileFavorites extends Profile {
         <li className="nav-item">
           <Link
             className="nav-link"
-            to={`/@${this.props.profile.username}`}>
+            to={`/h2h/@${this.props.profile.username}`}>
             My Post
           </Link>
         </li>
@@ -41,7 +41,7 @@ class ProfileFavorites extends Profile {
         <li className="nav-item">
           <Link
             className="nav-link active"
-            to={`/@${this.props.profile.username}/favorites`}>
+            to={`/h2h/@${this.props.profile.username}/favorites`}>
             Favorited Posts
           </Link>
         </li>

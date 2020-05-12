@@ -7,19 +7,19 @@ const LoggedOutView = props => {
       <ul className="nav  pull-xs-right">
 
         <li className="nav-item">
-          <Link to="/" className="nav-link">
+          <Link to="/h2h/" className="nav-link">
             Home
           </Link>
         </li>
 
         <li className="nav-item">
-          <Link to="/login" className="nav-link">
+          <Link to="/h2h/login" className="nav-link">
             Sign in
           </Link>
         </li>
 
         <li className="nav-item">
-          <Link to="/register" className="nav-link">
+          <Link to="/h2h/register" className="nav-link">
             Sign up
           </Link>
         </li>
@@ -41,13 +41,13 @@ const LoggedInView = props => {
         </li>
         
         <li className="nav-item">
-          <Link to="/" className="nav-link">
+          <Link to="/h2h/" className="nav-link">
             <i className="ion-home"></i>&nbsp;Home
           </Link>
         </li>
 
         <li className="nav-item">
-          <Link to="/editor" className="nav-link">
+          <Link to="/h2h/editor" className="nav-link">
             <i className="ion-compose"></i>&nbsp;New Post
           </Link>
         </li>
@@ -55,10 +55,10 @@ const LoggedInView = props => {
         <li className="nav-item dropdown">
           <a href="" className="nav-link"><i className="ion-person"></i>&nbsp;{props.currentUser.username}</a>
           <div className="dropdown-content">
-            <Link to={`/@${props.currentUser.username}`} className="nav-link">
+            <Link to={`/h2h/@${props.currentUser.username}`} className="nav-link">
               <i className=""></i>&nbsp;Profile
             </Link>
-            <Link to="/settings" className="nav-link">
+            <Link to="/h2h/settings" className="nav-link">
               <i className=""></i>&nbsp;Edit Profile
             </Link>
           </div>         
@@ -76,7 +76,7 @@ class Header extends React.Component {
       <nav className="navbar navbar-light">
         <div className="container">
 
-          <Link to="/" className="navbar-brand">
+          <Link to="/h2h" className="navbar-brand">
             <h4 className="brandColor">{this.props.appName}</h4>
           </Link>
 
